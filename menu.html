@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Foodie | Menu</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+      <a href="index.html" class="logo"> 🍽️ Foodie </a>
+
+      <nav>
+        <a href="index.html"> Home </a>
+
+        <a href="menu.html" class="nav-active"> Menu </a>
+
+        <a href="tracking.html"> Track Order </a>
+      </nav>
+
+      <a href="cart.html" class="cart-button">
+        🛒 Cart
+
+        <b id="cartCount"> 0 </b>
+      </a>
+    </header>
+
+    <!-- MENU -->
+
+    <main>
+      <section class="menu-section page-menu">
+        <div class="section-heading">
+          <p class="section-label">OUR MENU</p>
+
+          <h1>Choose Your Favourite</h1>
+
+          <p>Delicious food prepared fresh for you.</p>
+        </div>
+
+        <!-- CATEGORIES -->
+
+        <div class="categories" id="categories">
+          <button class="category active" data-category="all">🍽️ All</button>
+
+          <button class="category" data-category="pizza">🍕 Pizza</button>
+
+          <button class="category" data-category="burger">🍔 Burger</button>
+
+          <button class="category" data-category="biryani">🍗 Biryani</button>
+
+          <button class="category" data-category="chinese">🍜 Chinese</button>
+
+          <button class="category" data-category="dessert">🍰 Desserts</button>
+
+          <button class="category" data-category="drinks">🥤 Drinks</button>
+        </div>
+
+        <!-- PRODUCTS -->
+
+        <div class="products-grid" id="productsGrid"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="logo">🍽️ Foodie</div>
+
+        <p>Fresh food. Easy ordering. Happy customers.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

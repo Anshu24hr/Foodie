@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Foodie | Track Order</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+      <a href="index.html" class="logo"> 🍽️ Foodie </a>
+
+      <nav>
+        <a href="index.html"> Home </a>
+
+        <a href="menu.html"> Menu </a>
+
+        <a href="tracking.html" class="nav-active"> Track Order </a>
+      </nav>
+
+      <a href="cart.html" class="cart-button">
+        🛒 Cart
+
+        <b id="cartCount"> 0 </b>
+      </a>
+    </header>
+
+    <!-- TRACKING -->
+
+    <main>
+      <section class="tracking-section tracking-page">
+        <div class="section-heading">
+          <p class="section-label">ORDER TRACKING</p>
+
+          <h1>Track Your Food 🍽️</h1>
+
+          <p>Enter your Order ID and Table Number.</p>
+        </div>
+
+        <!-- SEARCH -->
+
+        <div class="tracking-search tracking-form">
+          <div class="tracking-input-group">
+            <label> Order ID </label>
+
+            <input
+              type="text"
+              id="trackingOrderId"
+              placeholder="Example: FD123456"
+            />
+          </div>
+
+          <div class="tracking-input-group">
+            <label> Table Number </label>
+
+            <input type="number" id="trackingTable" placeholder="Example: 12" />
+          </div>
+
+          <button id="trackOrderButton" class="primary-button">
+            Track Order
+          </button>
+        </div>
+
+        <!-- RESULT -->
+
+        <div id="trackingResult" class="tracking-result">
+          <div class="tracking-placeholder">
+            <div>🔎</div>
+
+            <h3>Enter your order details</h3>
+
+            <p>Your current order status will appear here.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="logo">🍽️ Foodie</div>
+
+        <p>Fresh food. Easy ordering. Happy customers.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
