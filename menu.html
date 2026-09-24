@@ -2,86 +2,148 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Foodie | Menu</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-
-  <body>
-    <!-- NAVBAR -->
-
-    <header class="navbar">
-      <a href="index.html" class="logo"> 🍽️ Foodie </a>
-
-      <nav>
-        <a href="index.html"> Home </a>
-
-        <a href="menu.html" class="nav-active"> Menu </a>
-
-        <a href="tracking.html"> Track Order </a>
+  <body class="bg-gray-50 text-gray-800 font-sans min-h-screen flex flex-col">
+    <header
+      class="bg-white border-b sticky top-0 z-50 px-6 py-4 flex items-center justify-between shadow-sm"
+    >
+      <a href="index.html" class="text-2xl font-bold text-orange-500"
+        >🍽️ Foodie</a
+      >
+      <nav class="flex gap-6 font-medium">
+        <a href="index.html" class="hover:text-orange-500">Home</a>
+        <a href="menu.html" class="text-orange-500 font-semibold">Menu</a>
+        <a href="tracking.html" class="hover:text-orange-500">Track Order</a>
       </nav>
-
-      <a href="cart.html" class="cart-button">
-        🛒 Cart
-
-        <b id="cartCount"> 0 </b>
-      </a>
+      <a
+        href="cart.html"
+        class="bg-orange-500 text-white px-4 py-2 rounded-full font-semibold hover:bg-orange-600 transition"
+        >🛒 Cart
+        <span class="bg-white text-orange-500 px-2 py-0.5 rounded-full text-xs"
+          >0</span
+        ></a
+      >
     </header>
+    <main class="flex-grow max-w-6xl mx-auto px-6 py-12 w-full">
+      <div class="text-center mb-10">
+        <p class="text-orange-500 font-bold text-sm tracking-wide">OUR MENU</p>
+        <h1 class="text-4xl font-extrabold text-gray-900 mt-1">
+          Choose Your Favourite
+        </h1>
+        <p class="text-gray-600">Delicious food prepared fresh for you.</p>
+      </div>
 
-    <!-- MENU -->
+      
+      <div class="flex flex-wrap justify-center gap-2 mb-10">
+        <button class="bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-sm" >
+          🍽️ All
+        </button>
 
-    <main>
-      <section class="menu-section page-menu">
-        <div class="section-heading">
-          <p class="section-label">OUR MENU</p>
+        <button
+          class="bg-white border hover:bg-orange-50 text-gray-700 px-4 py-2 rounded-full text-sm font-semibold">
+          🍕 Pizza
+        </button>
 
-          <h1>Choose Your Favourite</h1>
+        <button class="bg-white border hover:bg-orange-50 text-gray-700 px-4 py-2 rounded-full text-sm font-semibold">
+          🍔 Burger
+        </button>
 
-          <p>Delicious food prepared fresh for you.</p>
+        <button class="bg-white border hover:bg-orange-50 text-gray-700 px-4 py-2 rounded-full text-sm font-semibold">
+          🍗 Biryani
+        </button>
+
+        <button class="bg-white border hover:bg-orange-50 text-gray-700 px-4 py-2 rounded-full text-sm font-semibold">
+          🍜 Chinese
+        </button>
+
+        <button class="bg-white border hover:bg-orange-50 text-gray-700 px-4 py-2 rounded-full text-sm font-semibold">
+          🍰 Desserts
+        </button>
+
+        <button class="bg-white border hover:bg-orange-50 text-gray-700 px-4 py-2 rounded-full text-sm font-semibold">
+          🥤 Drinks
+        </button>
+      </div>
+
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div
+          class="bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
+          <div
+            class="h-40 bg-orange-100 flex items-center justify-center text-6xl">
+            🍕
+          </div>
+          <div class="p-5">
+            <h3 class="text-lg font-bold text-gray-900">Margherita Pizza</h3>
+            <p class="text-gray-500 text-sm mt-1">
+              Classic cheese and fresh tomato sauce pizza.
+            </p>
+            <div class="flex items-center justify-between mt-4">
+              <span class="text-lg font-extrabold text-orange-500">₹299</span>
+              <a
+                href="cart.html"
+                class="bg-orange-500 text-white px-3 py-1.5 rounded-lg text-sm font-semibold hover:bg-orange-600"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
         </div>
 
-        <!-- CATEGORIES -->
 
-        <div class="categories" id="categories">
-          <button class="category active" data-category="all">🍽️ All</button>
-
-          <button class="category" data-category="pizza">🍕 Pizza</button>
-
-          <button class="category" data-category="burger">🍔 Burger</button>
-
-          <button class="category" data-category="biryani">🍗 Biryani</button>
-
-          <button class="category" data-category="chinese">🍜 Chinese</button>
-
-          <button class="category" data-category="dessert">🍰 Desserts</button>
-
-          <button class="category" data-category="drinks">🥤 Drinks</button>
+        <div class="bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
+          <div
+            class="h-40 bg-orange-100 flex items-center justify-center text-6xl">
+            🍔
+          </div>
+          <div class="p-5">
+            <h3 class="text-lg font-bold text-gray-900">Cheese Burger</h3>
+            <p class="text-gray-500 text-sm mt-1">
+              Juicy patty topped with melted cheddar cheese.
+            </p>
+            <div class="flex items-center justify-between mt-4">
+              <span class="text-lg font-extrabold text-orange-500">₹149</span>
+              <a
+                href="cart.html"
+                class="bg-orange-500 text-white px-3 py-1.5 rounded-lg text-sm font-semibold hover:bg-orange-600"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
         </div>
 
-        <!-- PRODUCTS -->
 
-        <div class="products-grid" id="productsGrid"></div>
-      </section>
+        <div class="bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
+          <div class="h-40 bg-orange-100 flex items-center justify-center text-6xl">
+            🍗
+          </div>
+          <div class="p-5">
+            <h3 class="text-lg font-bold text-gray-900">Chicken Biryani</h3>
+            <p class="text-gray-500 text-sm mt-1">
+              Aromatic basmati rice cooked with spices and chicken.
+            </p>
+            <div class="flex items-center justify-between mt-4">
+              <span class="text-lg font-extrabold text-orange-500">₹249</span>
+              <a
+                href="cart.html"
+                class="bg-orange-500 text-white px-3 py-1.5 rounded-lg text-sm font-semibold hover:bg-orange-600"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
     </main>
 
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="logo">🍽️ Foodie</div>
-
-        <p>Fresh food. Easy ordering. Happy customers.</p>
-      </div>
+    <footer class="bg-white border-t py-8 text-center text-gray-500 text-sm space-y-2 mt-auto">
+      <div class="text-xl font-bold text-orange-500">🍽️ Foodie</div>
+      <p>Fresh food. Easy ordering. Happy customers.</p>
     </footer>
 
-    <script src="script.js"></script>
+
   </body>
 </html>

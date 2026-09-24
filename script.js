@@ -1216,9 +1216,9 @@ document.addEventListener("click", (event) => {
   }
 });
 
-/* =====================================================
+/* 
    26. NOTIFICATION
-===================================================== */
+ */
 
 function showNotification(message) {
   const old = document.querySelector(".custom-notification");
@@ -1272,9 +1272,9 @@ function showNotification(message) {
   }, 2500);
 }
 
-/* =====================================================
+/* 
    27. NOTIFICATION ANIMATION
-===================================================== */
+ */
 
 const notificationStyle = document.createElement("style");
 

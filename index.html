@@ -2,121 +2,120 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Foodie | Home</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
-  <body>
-    <!-- NAVBAR -->
+  <body class="bg-gray-50 text-gray-800 font-sans min-h-screen flex flex-col">
+    <header
+      class="bg-white border-b sticky top-0 z-50 px-6 py-4 flex items-center justify-between shadow-sm"
+    >
+      <a href="index.html" class="text-2xl font-bold text-orange-500"
+        >🍽️ Foodie</a
+      >
 
-    <header class="navbar">
-      <a href="index.html" class="logo"> 🍽️ Foodie </a>
-
-      <nav>
-        <a href="index.html" class="nav-active"> Home </a>
-
-        <a href="menu.html"> Menu </a>
-
-        <a href="tracking.html"> Track Order </a>
+      <nav class="flex gap-6 font-medium">
+        <a href="index.html" class="text-orange-500 font-semibold">Home</a>
+        <a href="menu.html" class="hover:text-orange-500">Menu</a>
+        <a href="tracking.html" class="hover:text-orange-500">Track Order</a>
       </nav>
 
-      <a href="cart.html" class="cart-button">
-        🛒 Cart
-
-        <b id="cartCount"> 0 </b>
-      </a>
+      <a
+        href="cart.html"
+        class="bg-orange-500 text-white px-4 py-2 rounded-full font-semibold hover:bg-orange-600 transition"
+        >🛒 Cart
+        <span class="bg-white text-orange-500 px-2 py-0.5 rounded-full text-xs"
+          >0</span
+        ></a
+      >
     </header>
 
-    <!-- HERO -->
-
-    <main>
-      <section class="hero">
-        <div class="hero-content">
-          <p class="hero-small-text">🍴 Fresh food • Easy ordering</p>
-
-          <h1>
-            Good Food.
-
-            <span> Good Mood. </span>
+    <main class="flex-grow max-w-6xl mx-auto px-6 py-12 w-full">
+      <section
+        class="flex flex-col md:flex-row items-center justify-between gap-10 py-12"
+      >
+        <div class="max-w-lg space-y-6">
+          <span
+            class="text-xs uppercase tracking-wider text-orange-500 font-bold bg-orange-100 px-3 py-1 rounded-full"
+            >🍴 Fresh food • Easy ordering</span
+          >
+          <h1 class="text-5xl font-extrabold text-gray-900 leading-tight">
+            Good Food. <span class="text-orange-500">Good Mood.</span>
           </h1>
-
-          <p class="hero-description">
+          <p class="text-gray-600 text-lg">
             Order your favourite food directly from your table. No waiting, no
             hassle.
           </p>
-
-          <div class="hero-buttons">
-            <a href="menu.html" class="primary-button"> Explore Menu → </a>
-
-            <a href="tracking.html" class="secondary-button"> Track Order </a>
+          <div class="flex gap-4">
+            <a
+              href="menu.html"
+              class="bg-orange-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 shadow-md"
+              >Explore Menu →</a
+            >
+            <a
+              href="tracking.html"
+              class="border border-gray-300 text-gray-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100"
+              >Track Order</a
+            >
           </div>
         </div>
+        <div
+          class="w-64 h-64 md:w-80 md:h-80 bg-orange-100 rounded-full flex items-center justify-center text-8xl shadow-inner"
+        >
+          🍕
+        </div>
+      </section>
 
-        <div class="hero-image">
-          <div class="food-circle">🍕</div>
+      <section class="py-12 border-t">
+        <div class="text-center mb-10">
+          <p class="text-orange-500 font-bold text-sm tracking-wide">
+            WHY FOODIE?
+          </p>
+          <h2 class="text-3xl font-bold text-gray-900">Your food, your way.</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div
+            class="bg-white p-6 rounded-xl border text-center shadow-sm hover:shadow-md transition"
+          >
+            <div class="text-4xl mb-3">📱</div>
+            <h3 class="text-xl font-bold mb-2">Easy Ordering</h3>
+            <p class="text-gray-600 text-sm">
+              Scan, choose your food and place your order from your table.
+            </p>
+          </div>
+          <div
+            class="bg-white p-6 rounded-xl border text-center shadow-sm hover:shadow-md transition"
+          >
+            <div class="text-4xl mb-3">👨‍🍳</div>
+            <h3 class="text-xl font-bold mb-2">Freshly Prepared</h3>
+            <p class="text-gray-600 text-sm">
+              Your order goes directly to the kitchen for preparation.
+            </p>
+          </div>
+          <div
+            class="bg-white p-6 rounded-xl border text-center shadow-sm hover:shadow-md transition"
+          >
+            <div class="text-4xl mb-3">📦</div>
+            <h3 class="text-xl font-bold mb-2">Track Your Order</h3>
+            <p class="text-gray-600 text-sm">
+              Check your order status anytime using your Order ID.
+            </p>
+          </div>
         </div>
       </section>
 
-      <!-- FEATURES -->
-
-      <section class="features-section">
-        <div class="section-heading">
-          <p class="section-label">WHY FOODIE?</p>
-
-          <h2>Your food, your way.</h2>
-        </div>
-
-        <div class="features-grid">
-          <div class="feature-card">
-            <div class="feature-icon">📱</div>
-
-            <h3>Easy Ordering</h3>
-
-            <p>Scan, choose your food and place your order from your table.</p>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon">👨‍🍳</div>
-
-            <h3>Freshly Prepared</h3>
-
-            <p>Your order goes directly to the kitchen for preparation.</p>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon">📦</div>
-
-            <h3>Track Your Order</h3>
-
-            <p>Check your order status anytime using your Order ID.</p>
-          </div>
-        </div>
-      </section>
+      
     </main>
+    <footer
+      class="bg-white border-t py-8 text-center text-gray-500 text-sm space-y-2 mt-auto"
+    >
+      <div class="text-xl font-bold text-orange-500">🍽️ Foodie</div>
+      <p>Fresh food. Easy ordering. Happy customers.</p>
+      <p>© 2026 Foodie Restaurant.</p>
 
-    <!-- FOOTER -->
-
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="logo">🍽️ Foodie</div>
-
-        <p>Fresh food. Easy ordering. Happy customers.</p>
-
-        <p class="copyright">© 2026 Foodie Restaurant.</p>
-      </div>
     </footer>
 
-    <script src="script.js"></script>
+    
   </body>
 </html>
